@@ -1,0 +1,71 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="ContentDescription"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/sky"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/instruction"
+        android:layout_width="201dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginBottom="122dp"
+        android:background="@drawable/ins"
+        android:onClick="instruct"
+        app:layout_constraintBottom_toTopOf="@+id/BackButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easy" />
+
+    <Button
+        android:id="@+id/easy"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="246dp"
+        android:background="@drawable/neww"
+        android:onClick="game"
+        app:layout_constraintBottom_toTopOf="@+id/HanoiScore"
+        app:layout_constraintEnd_toEndOf="@+id/instruction"
+        app:layout_constraintStart_toStartOf="@+id/instruction"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/HanoiScore"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/scoreboard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BackButton"
+        app:layout_constraintTop_toBottomOf="@+id/easy" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="137dp"
+        android:layout_height="53dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/HanoiScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction" />
+
+</android.support.constraint.ConstraintLayout>

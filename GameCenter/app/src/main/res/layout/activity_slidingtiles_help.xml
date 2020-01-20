@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription"
+    tools:context=".TileGame.HelpActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:layout_width="411dp"
+        android:layout_height="660dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HelpButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="117dp"
+        android:text="Introduction: \n   A sliding puzzle, sliding block puzzle, or sliding tile puzzle is a combination puzzle that challenges a player to slide (frequently flat) pieces along certain routes (usually on a board) to establish a certain end-configuration. \n \n \n Rules: \n   As you might guess, you can slide tiles that are adjacent to the blank area.The game concludes when a player successfully orders the tiles, with the blank tile at the bottom right. The game can also be paused partway through and saved if needed, and then loaded back from the previous save. \n \n \nScores: \n   In this game, every time player swipes two tiles, the socre is added by one. Your final score is the current score when the puzzle is solved. Notice that under this algorithm, the less score you gain when game ended(which means the less times you swipe tiles), the better you perform in this game."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

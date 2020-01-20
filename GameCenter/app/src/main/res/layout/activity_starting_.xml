@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fall2018.csc2017.GameCenter.TileGame.StartingActivity"
+    tools:ignore="ContentDescription"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/sky"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ListView
+        android:id="@+id/GameIntroText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginBottom="252dp"
+        app:layout_constraintBottom_toTopOf="@+id/BackButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/GameText"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_marginStart="0dp"-->
+    <!--android:layout_marginTop="120dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="Welcome To Sliding Tiles \n A Puzzle Game where you must arrange the numbers in the correct order"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2" />-->
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="159dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/neww"
+        app:layout_constraintBottom_toTopOf="@+id/LoadButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/LoadButton"
+        android:layout_width="157dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/resume"
+        app:layout_constraintBottom_toTopOf="@+id/SaveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartButton" />
+
+    <Button
+        android:id="@+id/ScoreButton"
+        android:layout_width="162dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/scoreboard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BackButton"
+        app:layout_constraintTop_toBottomOf="@+id/SaveButton" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="100dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ScoreButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GameIntroText" />
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/save"
+        app:layout_constraintBottom_toTopOf="@+id/ScoreButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoadButton" />
+
+</android.support.constraint.ConstraintLayout>
